@@ -9,4 +9,12 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/ready')
+  getReady(): object {
+    return {
+      status: 'ok',
+      message: 'Service is ready'
+    };
+  }
 }
