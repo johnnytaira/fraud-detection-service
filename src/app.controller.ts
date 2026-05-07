@@ -14,7 +14,7 @@ export class AppController {
   getReady(): object {
     return {
       status: 'ok',
-      message: 'Service is ready'
+      message: 'Service is ready',
     };
   }
 }

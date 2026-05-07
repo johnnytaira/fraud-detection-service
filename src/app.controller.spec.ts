@@ -19,12 +19,12 @@ describe('AppController', () => {
       expect(appController.getHello()).toBe('Hello World!');
     });
   });
-describe('ready', () => {
-  it('should return service readiness status', () => {
-    expect(appController.getReady()).toEqual({
-      status: 'ok',
-      message: 'Service is ready',
+  describe('ready', () => {
+    it('should return service readiness status', () => {
+      expect(appController.getReady()).toEqual({
+        status: 'ok',
+        message: 'Service is ready',
+      });
     });
   });
-});
 });
